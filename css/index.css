@@ -202,3 +202,355 @@ main>.box>.box02>p>a {
 .swiper-slide>ul>li:nth-of-type(2)>a>div>p:nth-of-type(3) {
     color: green;
 }
+
+/* 报告精选 */
+.box3 {
+    width: 100%;
+    height: 622px;
+    background-color: #f7f7f7;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.box301 {
+    width: 80%;
+    height: 100%;
+    /* background-color: red; */
+    margin: auto;
+}
+
+.box301>p {
+    font-size: 20px;
+    color: #474747;
+    font-weight: 600;
+}
+
+.box301>p>a {
+    float: right;
+    font-size: 14px;
+    color: #fd6959;
+    padding-right: 20px;
+    background: url(../img/readMore.png) no-repeat right center;
+    line-height: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.box302 {
+    width: 100%;
+    height: 100%;
+    /* background-color: greenyellow; */
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.box302>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box302>ul>li {
+    float: left;
+    width: 20%;
+    height: 250px;
+    /* background-color: #000; */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box302>ul>li:nth-of-type(4),
+.box302>ul>li:nth-of-type(8) {
+    margin-right: 0px;
+}
+
+.box302>ul>li>img {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.box302>ul>li>.box3021 {
+    float: left;
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    padding-left: 8px;
+    padding-right: 12px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+
+}
+
+.box302>ul>li>.box3021>p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #474747;
+    line-height: 20px;
+}
+
+.box302>ul>li>.box3021>p:nth-of-type(2) {
+    font-size: 12px;
+    color: gray;
+    margin-top: 40px;
+}
+
+.box302>ul>li>.box3021>p:nth-of-type(2)>span {
+    padding-left: 20px;
+    float: right;
+}
+
+.box302>ul>li>.box3021>p:nth-of-type(2)>span:nth-of-type(2) {
+    background: url(../img/zan.png) no-repeat center;
+}
+
+.box302>ul>li>.box3021>p:nth-of-type(2)>span:nth-of-type(1) {
+    background: url(../img/reply.png) no-repeat center;
+}
+
+.box302>ul>li:hover img {
+    animation: swiper 1s infinite;
+    transition: all 1s;
+}
+
+/* 导购精选 */
+.box4 {
+    width: 80%;
+    /* height: 358px; */
+    height: 458px;
+
+    /* background-color: rebeccapurple; */
+    margin: auto;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.box4>p {
+    font-size: 20px;
+    color: #474747;
+    font-weight: 700;
+}
+
+.box401 {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    /* background-color: saddlebrown; */
+}
+
+.box401>ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box401>ul>li {
+    float: left;
+    width: 23%;
+    /* height: 90%; */
+    height: 318px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    border-bottom: none;
+
+}
+
+.box401>ul>li>a {
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box401>ul>li>a>img {
+    width: 100%;
+    height: 60%;
+    float: left;
+
+}
+
+.box402 {
+    float: left;
+    width: 100%;
+    height: 35%;
+    /* background-color: #000; */
+    padding: 0px 15px;
+    box-sizing: border-box;
+    /* border: 1px solid gray;
+    border-radius: 0px 0px 10px 10px; */
+    border-top: none;
+}
+
+.box402>span {
+    font-size: 14px;
+    color: #474747;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.box402>p {
+    text-align: right;
+    margin-top: 30px;
+
+}
+
+.box402>p>span {
+    display: inline-block;
+    padding-left: 20px;
+    background: url(../img/zan.png) no-repeat 5px center;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.box402>p>span:nth-of-type(2) {
+    background: url(../img/reply.png) no-repeat 5px center;
+
+}
+
+.box401>ul>li>p {
+    float: left;
+    width: 101%;
+    height: 20px;
+    background-color: saddlebrown;
+    background: url(../img/listbg.jpg) no-repeat;
+    background-size: 100%;
+    margin-top: -7px;
+    margin-left: -2px;
+}
+
+/* 发现酷玩 */
+.box5 {
+    width: 100%;
+    /* height: 1600px; */
+    background-color: #f7f7f7;
+    /* margin: auto; */
+    overflow: hidden;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.box501 {
+    width: 80%;
+    /* height: 100%; */
+    /* background-color: rebeccapurple; */
+    margin: auto;
+}
+
+/* .box502 {
+    width: 100%;
+    height: 100%;
+} */
+
+.box501>ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.box501>ul>li {
+    float: left;
+    width: 23%;
+    height: 331px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.box501>ul>li>img {
+    width: 100%;
+    height: 70%;
+    float: left;
+}
+
+.box502 {
+    float: left;
+    width: 100%;
+    height: 30%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.box502>p:nth-of-type(1) {
+    font-size: 14px;
+    color: #474747;
+}
+
+.box502>span {
+    font-size: 12px;
+    color: #a3a3a3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box502>p:nth-of-type(2) {
+    font-size: 14px;
+    color: #fe5341;
+    margin-top: 20px;
+
+}
+
+.box502>p:nth-of-type(2)>span {
+    float: right;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.box502>p:nth-of-type(2)>span:nth-of-type(2) {
+    background: url(../img/zan.png) no-repeat 6px 2px;
+}
+
+.box502>p:nth-of-type(2)>span:nth-of-type(1) {
+    background: url(../img/reply.png) no-repeat 6px 2px;
+}
+
+.box502 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background: url(../img/more.png) no-repeat 695px 32px;
+}
+
+.box502>p {
+    line-height: 50px;
+}
+
+/* 返回顶部 */
+.box6 {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    opacity: .3;
+    border-radius: 15px;
+    overflow: hidden;
+    display: none;
+}
+
+.box6>a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../img/back.png) no-repeat center center;
+    background-color: gray;
+}
+
+.box6:hover {
+    opacity: 1;
+}

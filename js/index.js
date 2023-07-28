@@ -4,7 +4,7 @@ axios.get('http://127.0.0.1:3000/useing/public', {
     var ul_ = document.querySelectorAll('.swiper-slide')[1].children[0]
     var ul1_ = document.querySelectorAll('.swiper-slide')[2].children[0]
     var ul2_ = document.querySelectorAll('.swiper-slide')[3].children[0]
-    console.log(ul1_);
+    // console.log(ul1_);
     var str = '';
     var num = 0;
     for (var item of res.data) {
@@ -34,7 +34,7 @@ axios.get('http://127.0.0.1:3000/useing/public', {
         }
         else if (num > 5 && num < 10) {
 
-            console.log(num);
+            // console.log(num);
             str += `
             <li>
             <a href="">
@@ -58,7 +58,7 @@ axios.get('http://127.0.0.1:3000/useing/public', {
         }
         else if (num > 10 && num < 14) {
 
-            console.log(num);
+            // console.log(num);
             str += `
             <li>
             <a href="">
@@ -79,7 +79,52 @@ axios.get('http://127.0.0.1:3000/useing/public', {
             ul2_.innerHTML = str;
         }
     }
+})
 
+// 发现酷玩
+axios.get('http://127.0.0.1:3000/play/new', {
 
+}).then(function (res) {
+    // console.log(res.data);
+    var str = ''
+    var num = 0;
+    for (var item of res.data) {
+
+        // console.log(item);
+        for (var item1 of item) {
+            num++;
+            // console.log(item1);
+            if (num < 17) {
+                str += `
+            <li>
+                        <img src=${item1.img} alt="">
+                        <div class="box502">
+                            <p>${item1.description}</p>
+                            <span>${item1.text}</span>
+                            <p>${item1.price}<span>${item1.like}</span><span>${item1.like}</span></p>
+                        </div>
+                    </li>
+            `
+            }
+        }
+    }
+    // console.log();
+    document.querySelector('.box501').children[1].innerHTML = str
 
 })
+
+
+//返回最上面
+
+var box6_ = document.querySelector('.box6')
+window.onscroll = function () {
+    // var client_ = document.documentElement.clientHeight;
+    var client1_ = document.documentElement.scrollTop;
+
+    if (client1_ > 0) {
+        box6_.style.display = 'inline-block'
+    }
+    if (client1_ == 0) {
+        box6_.style.display = 'none'
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <iframe src="./title.html" frameborder="0"></iframe>
+    </header>
+    <div class="box">
+        <div class="box1">
+            <p>登陆</p>
+            <input type="text" placeholder="用户名">
+            <input type="password" placeholder="密码"><br>
+            <button>登陆</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    var inp_ = document.querySelector('input');
+
+    document.querySelector('button').onclick = function () {
+        console.log(inp_.value);
+        console.log(localStorage.getItem(inp_.value));
+        if (document.querySelectorAll('input')[1].value == localStorage.getItem(inp_.value)) {
+            window.location.href = './index.html'
+            sessionStorage.setItem('key', true)
+
+        } else {
+            alert('账号或用户名不正确')
+            document.querySelectorAll('input')[1].value = ''
+        }
+
+    }
+</script>
