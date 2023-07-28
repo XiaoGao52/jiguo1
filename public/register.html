@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        header>iframe {
+            width: 100%;
+        }
+
+        .box1 {
+            margin-top: -80px;
+            width: 100%;
+            height: 846px;
+            background-color: #f7f7f7;
+            padding: 30px 0px;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            width: 80%;
+            height: 100%;
+            /* background-color: rebeccapurple; */
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        .box2>p {
+            margin-top: 20px;
+            text-indent: 20px;
+            border-left: 5px solid #fe5341;
+            font-size: 20px;
+            color: #474747;
+        }
+
+        .box3 {
+            /* margin-top: 30px; */
+            width: 60%;
+            height: 100%;
+            /* background-color: #fe5341; */
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        .box3>input {
+            width: 70%;
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            background-color: #f7f7f7;
+            text-indent: 10px;
+            font-size: 17px;
+            margin: 15px 0px;
+
+        }
+
+        .box3>input:nth-of-type(1) {
+            margin-top: 30px;
+        }
+
+        .box3>input:nth-of-type(2) {
+            width: 53%;
+            margin-right: 1%;
+        }
+
+        .box3>input:nth-of-type(3) {
+            width: 53%;
+            margin-right: 1%;
+        }
+
+        .box3>button {
+            width: 120px;
+            height: 48px;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid #999;
+            color: #999;
+            font-size: 16px;
+        }
+
+        .box3>input:focus {
+            outline: auto;
+        }
+
+        .box3>button:nth-of-type(2) {
+            width: 70%;
+            height: 50px;
+            background-color: #fc301a;
+            font-size: 20px;
+            color: white;
+            opacity: .8;
+        }
+
+        .box3>button:nth-of-type(2):hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <iframe src="../public/title.html" frameborder="0"></iframe>
+    </header>
+    <div class="box1">
+        <div class="box2">
+            <p>注册极果</p>
+            <div class="box3">
+                <input type="text" placeholder="请输入登录手机号"><span></span>
+                <input type="text" placeholder="请输入图片检验码"><img src="../img/imgCode.jpg" alt="">
+                <input type="text" placeholder="请输入4位数字验证码"><button onclick="code()">获取验证码</button>
+                <input type="text" placeholder="请输入用户名"><span></span>
+                <input type="text" placeholder="请输入新密码"><span></span>
+                <input type="text" placeholder="请确认密码"><span></span>
+                <button>立即注册</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/title.js"></script>.
+<script>
+    var phoneReg = /^(13[0-9]|14[579]|15[0-35-9]|16[6]|17[01345678]|18[0-9]|19[189])\d{8}$/;
+    var usname_ = /^[a-zA-Z]\w{3,15}$/;
+    var psd_ = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,20}$/;
+    var box3_ = document.querySelector('.box3').children;
+    var span_ = document.querySelector('span')
+    console.log(box3_[7]);
+    box3_[0].onblur = function () {
+        if (phoneReg.test(box3_[0].value)) {
+            span_.innerHTML = '√'
+        }
+        else {
+            span_.innerHTML = '×'
+            box3_[0].value = ''
+        }
+    }
+    box3_[6].onblur = function () {
+        if (usname_.test(box3_[6].value)) {
+            box3_[7].innerHTML = '√'
+        }
+        else {
+            box3_[7].innerHTML = '×'
+            box3_[6].value = ''
+        }
+    }
+    box3_[8].onblur = function () {
+        if (psd_.test(box3_[8].value)) {
+            box3_[9].innerHTML = '√'
+        }
+        else {
+            box3_[9].innerHTML = '×'
+            box3_[8].value = ''
+        }
+    }
+    box3_[10].onblur = function () {
+        if (box3_[10].value == box3_[8].value) {
+            box3_[11].innerHTML = '√'
+        }
+        else {
+            box3_[11].innerHTML = '×'
+            box3_[10].value = ''
+        }
+    }
+    box3_[12].onclick = function () {
+        if (phoneReg.test(box3_[0].value) && usname_.test(box3_[6].value) && psd_.test(box3_[8].value) && box3_[10].value == box3_[8].value) {
+            localStorage.setItem('usname', box3_[6].value)
+            localStorage.setItem(box3_[6].value, box3_[8].value)
+            sessionStorage.setItem('key', true)
+            window.location.href = '../public/index.html'
+        } else {
+            alert('格式错误，请重新输入')
+
+        }
+    }
+</script>

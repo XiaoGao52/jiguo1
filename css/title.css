@@ -13,6 +13,9 @@
     width: 80%;
     height: 100%;
     margin: auto;
+    /* background-color: saddlebrown; */
+    overflow: hidden;
+
 }
 
 .box1>a {
@@ -115,4 +118,22 @@
 .box2>a:nth-of-type(3):hover {
     background-color: #FE5341;
     color: white;
+}
+
+.box3 {
+    margin-left: 1050px;
+    margin-top: 10px;
+}
+
+.box3>img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+.box3>span {
+    margin-left: 10px;
+    float: left;
+    line-height: 50px;
 }
