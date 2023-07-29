@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+.box1 {
+    width: 100%;
+    text-align: center;
+}
+
+.box1>a {
+    display: inline-block;
+    padding: 5px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    /* color: #fe5431; */
+}
+
+
+
+.active {
+    border-bottom: 4px solid #fe5431;
+}
+
+.box1>h1 {
+    font-size: 40px;
+    color: #333;
+}
+
+.box2 {
+    width: 100%;
+    /* height: 1000px; */
+    background-color: #f7f7f7;
+
+}
+
+.box201 {
+    width: 80%;
+    /* height: 100%; */
+    /* background-color: rebeccapurple; */
+    margin: auto;
+}
+
+.box201>ul {
+    list-style: none;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box201>ul>li {
+    width: 23%;
+    height: 23%;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+}
+
+.box201>ul>li>a {
+    float: left;
+    width: 100%;
+    height: 100%;
+    /* background-color: #fe5431; */
+    border-radius: 15px;
+    border: 1px solid gray;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+.box201>ul>li>a>img {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.box201>ul>li>a>.box202 {
+    width: 100%;
+    height: 50%;
+    /* background-color: forestgreen; */
+    float: left;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.box202>p {
+    margin: 10px 0px;
+    font-size: 14px;
+    color: #474747;
+}
+
+.box202>p:nth-of-type(2) {
+    text-align: right;
+}
+
+.box202>p:nth-of-type(2)>span {
+    display: inline-block;
+    padding-left: 20px;
+    margin-right: 5px;
+    background: url(../img/zan.png) no-repeat 5px center;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.box202>p:nth-of-type(2)>span:nth-of-type(2) {
+    background: url(../img/reply.png) no-repeat 5px center;
+
+}
+
+.box203 {
+    float: left;
+    width: 99%;
+    height: 17px;
+    /* background-color: #333; */
+    background: url(../img/listbg.jpg) no-repeat;
+    background-size: cover;
+    margin-top: -7px;
+    margin-left: 2px;
+}
+
+.box204 {
+    padding: 20px 0px;
+    text-align: center;
+    padding-left: 20px;
+    background: url(../img/more.png)no-repeat 553px center;
+}
+
+.box204>p>a {
+    text-decoration: none;
+    color: #fe5431;
+    font-size: 14px;
+}
+
+/* 最热 */
+.box3 {
+    width: 100%;
+
+}

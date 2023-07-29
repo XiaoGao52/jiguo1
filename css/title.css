@@ -71,9 +71,7 @@
     transition: all .3s;
 }
 
-.box101>a:nth-of-type(1) {
-    color: #fe5341;
-}
+
 
 .box2 {
     float: left;
