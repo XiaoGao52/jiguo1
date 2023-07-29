@@ -51,3 +51,32 @@ for (var i = 0; i < yao1.length; i++) {
     }
 }
 
+
+// 
+var zuixin = document.querySelector('.zuixin')
+var jiaright = document.querySelector('.jiazai1')
+
+jiaright.onclick = function () {
+    zuixin.style.height = '2000px';
+    jiaright.style.display = 'none';
+}
+
+
+// 点击事件
+
+var bao = document.querySelector('.bao');
+
+//  为每一个盒子添加点击事件
+
+bao.forEach(box => {
+    box.addEventlistener('click', () => {
+
+        // 移除所有盒子的边框
+        bao.forEach(box => {
+            box.classlist.remove('bao');
+        });
+        //  为当前点击的盒子添加边框样式
+        box.classlist.add('bao');
+    })
+
+});
