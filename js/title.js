@@ -18,11 +18,15 @@ function code() {
 }
 if (sessionStorage.getItem('key')) {
     document.querySelector('.box3').children[1].innerHTML = localStorage.getItem('usname');
-    sessionStorage.removeItem('key');
+    // sessionStorage.removeItem('key');
+    document.querySelector('.titimg').children[0].src = `http://q1.qlogo.cn/g?b=qq&nk=${localStorage.getItem('QQ')}&s=100`
     document.querySelector('.dlzc').style.display = 'none'
     document.querySelector('.titimg').style.display = 'block'
 } else {
     document.querySelector('.titimg').style.display = 'none'
 
     document.querySelector('.dlzc').style.display = 'block'
+}
+document.querySelector('.titimg').children[0].onmouseenter = function () {
+    console.log(1);
 }

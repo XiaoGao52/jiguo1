@@ -126,6 +126,7 @@
                 <input type="text" placeholder="请输入用户名"><span></span>
                 <input type="text" placeholder="请输入新密码"><span></span>
                 <input type="text" placeholder="请确认密码"><span></span>
+                <input type="text" placeholder="请输入QQ号">
                 <button>立即注册</button>
             </div>
         </div>
@@ -140,7 +141,7 @@
     var psd_ = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,20}$/;
     var box3_ = document.querySelector('.box3').children;
     var span_ = document.querySelector('span')
-    console.log(box3_[7]);
+    // console.log(box3_[7]);
     box3_[0].onblur = function () {
         if (phoneReg.test(box3_[0].value)) {
             span_.innerHTML = '√'
@@ -177,10 +178,11 @@
             box3_[10].value = ''
         }
     }
-    box3_[12].onclick = function () {
+    box3_[13].onclick = function () {
         if (phoneReg.test(box3_[0].value) && usname_.test(box3_[6].value) && psd_.test(box3_[8].value) && box3_[10].value == box3_[8].value) {
             localStorage.setItem('usname', box3_[6].value)
             localStorage.setItem(box3_[6].value, box3_[8].value)
+            localStorage.setItem('QQ', box3_[12].value)
             sessionStorage.setItem('key', true)
             window.location.href = '../public/index.html'
         } else {
@@ -188,4 +190,5 @@
 
         }
     }
+
 </script>
