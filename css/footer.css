@@ -16,7 +16,7 @@ footer>.box1 {
 }
 
 .box101 {
-    width: 80%;
+    width: 100%;
     height: 70%;
 
     /* background-color: firebrick; */
@@ -86,7 +86,7 @@ dd>a {
 .box6,
 .box7 {
     float: left;
-    margin: 0px 30px;
+    margin: 10px 30px;
 
 }
 

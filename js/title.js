@@ -16,6 +16,9 @@ function code() {
         }
     }, 1000)
 }
+
+
+// 登录注册
 if (sessionStorage.getItem('key')) {
     document.querySelector('.box3').children[1].innerHTML = localStorage.getItem('usname');
     // sessionStorage.removeItem('key');
@@ -27,6 +30,16 @@ if (sessionStorage.getItem('key')) {
 
     document.querySelector('.dlzc').style.display = 'block'
 }
-document.querySelector('.titimg').children[0].onmouseenter = function () {
+document.querySelector('.titimg').onmouseover = function () {
+    document.querySelector('.box4').style.display = 'block'
+    var li_ = document.querySelector('.box4').children[0].children[0];
+    li_.onclick = function () {
+        sessionStorage.removeItem('key')
+        location.reload();
+    }
+}
+document.querySelector('.titimg').onmouseout = function () {
+    document.querySelector('.box4').style.display = 'none';
     console.log(1);
+
 }

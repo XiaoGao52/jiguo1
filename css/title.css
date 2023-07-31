@@ -72,6 +72,9 @@
     transition: all .3s;
 }
 
+.active {
+    color: #fe5341 !important;
+}
 
 
 .box2 {
@@ -135,4 +138,31 @@
     margin-left: 10px;
     float: left;
     line-height: 50px;
+}
+
+.box4 {
+    display: none;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(171, 244, 246, 0.174);
+    position: absolute;
+    /* left: 500px; */
+    right: 320px;
+    top: 0px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.box4>ul {
+    list-style: none;
+    /* margin-top: 10px; */
+}
+
+.box4>ul>li {
+    padding: 2px 0px;
+}
+
+.box4>ul>li:hover {
+    background-color: linen;
 }

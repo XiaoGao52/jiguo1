@@ -156,3 +156,8 @@ window.onscroll = function () {
         box6_.style.display = 'none'
     }
 }
+for (var item of document.querySelector('.box302').children[0].children) {
+    item.onclick = function () {
+        location.href = '../public/conceal.html'
+    }
+}

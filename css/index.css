@@ -501,12 +501,20 @@ main>.box>.box02>p>a {
 }
 
 .box502>span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box502>p>span {
     font-size: 12px;
     color: #a3a3a3;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-left: 10px;
 }
+
 
 .box502>p:nth-of-type(2) {
     font-size: 14px;
@@ -523,11 +531,11 @@ main>.box>.box02>p>a {
 }
 
 .box502>p:nth-of-type(2)>span:nth-of-type(2) {
-    background: url(../img/zan.png) no-repeat 6px 17px;
+    background: url(../img/zan.png) no-repeat 5px 3px;
 }
 
 .box502>p:nth-of-type(2)>span:nth-of-type(1) {
-    background: url(../img/reply.png) no-repeat 6px 17px;
+    background: url(../img/reply.png) no-repeat 5px 3px;
 }
 
 .box501>ul>li:hover {
@@ -551,6 +559,7 @@ main>.box>.box02>p>a {
     text-decoration: none;
     line-height: 50px;
 }
+
 
 /* 返回顶部 */
 .box6 {
