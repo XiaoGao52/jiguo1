@@ -53,7 +53,7 @@
 
 .fruit>.fruit-right {
     width: 62%;
-    height: 2450px;
+    height: 1000px;
     background-color: #F3F3F3;
     border-radius: 5px;
     float: left;
@@ -91,44 +91,5 @@
 .fruit>.fruit-right>.nei1>dl>p {
     color: #535353;
     line-height: 30px;
-}
-
-.fruit>.fruit-right>.nei1>dl:nth-of-type(3) dt {
-    margin-top: 60px;
-    font-size: 18px;
-    /* color: aquamarine; */
-}
-
-.fruit>.fruit-right>.nei1>dl:nth-of-type(4) dt {
-    margin-top: 50px;
-}
-
-.fruit>.fruit-right>.nei1>dl:nth-of-type(4) p {
-    padding-left: 18px;
-    margin-top: 10px;
-}
-
-.fruit>.fruit-right>.nei1>dl:nth-of-type(5) p {
-    padding-left: 18px;
-    margin-top: 10px;
-}
-
-.fruit>.fruit-right>.nei1>dl:nth-of-type(6) p {
-    padding-left: 18px;
-    margin-top: 10px;
-}
-
-.fruit>.fruit-right>.nei1>dl:nth-of-type(7) p {
-    padding-left: 18px;
-    margin-top: 10px;
-}
-
-.fruit>.fruit-right>.nei1>dl:nth-of-type(8) p {
-    padding-left: 18px;
-    margin-top: 10px;
-}
-
-.fruit>.fruit-right>.nei1>dl:nth-of-type(9) p {
-    padding-left: 18px;
-    margin-top: 10px;
+    /* margin-top: 30px; */
 }

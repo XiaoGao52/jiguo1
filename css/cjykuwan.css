@@ -276,6 +276,7 @@
     height: 100%;
     /* background-color: blue; */
     float: left;
+    cursor: pointer;
 }
 
 .zuixin>.jiazai1>.jiaright>a {
@@ -283,6 +284,10 @@
     color: #FE5341;
 }
 
+.zuixin>.jiazai1>.jiaright>p {
+    /* text-decoration: none; */
+    color: #FE5341;
+}
 
 
 

@@ -42,12 +42,12 @@ for (var i = 0; i < a1.length; i++) {
 }
 
 // 内部排他法
-
+// 大众
 var a2 = document.getElementsByTagName('a');
 // console.log(a2);
 
 var port = document.getElementsByClassName('port');
-console.log(port);
+// console.log(port);
 var arry = [a2[2], a2[3], a2[4], a2[5]]
 
 for (var i = 0; i < arry.length; i++) {
@@ -62,11 +62,22 @@ for (var i = 0; i < arry.length; i++) {
 }
 
 
+// 导师体验
+
+// var a3 = document.getElementsByTagName('a');
+var port1 = document.getElementsByClassName('port');
+var port2 = [port1[4], port1[5], port1[6], port1[7]]
+console.log(port2);
+var b1 = [a2[6], a2[7], a2[8], a2[9]]
+console.log(b1);
+
+
+
 
 // 加载更多点击事件
 
 var hui = document.querySelector('.port');
-console.log(hui);
+// console.log(hui);
 var jia = document.querySelector('.jia');
 
 jia.onclick = function () {
