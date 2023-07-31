@@ -112,8 +112,36 @@ axios.get('http://127.0.0.1:3000/play/new', {
     document.querySelector('.box501').children[1].innerHTML = str
 
 })
+// 点击加载更多
 
+var str2 = ''
+var box502_ = document.querySelector('.box502').children[0]
+box502_.onclick = function () {
+    axios.get('http://127.0.0.1:3000/play/hot', {
 
+    }).then(function (res) {
+        // console.log(res.data);
+        for (var item of res.data) {
+
+            for (var item1 of item) {
+                str2 += `
+            <li>
+                        <img src=${item1.img} alt="">
+                        <div class="box502">
+                            <p>${item1.description}</p>
+                            <span>${item1.text}</span>
+                            <p>${item1.price}<span>${item1.like}</span><span>${item1.like}</span></p>
+                        </div>
+                    </li>
+            `
+            }
+        }
+        // console.log();
+        document.querySelector('.box501').children[2].innerHTML = str2
+        box502_.parentNode.style.display = 'none'
+    })
+
+}
 //返回最上面
 
 var box6_ = document.querySelector('.box6')

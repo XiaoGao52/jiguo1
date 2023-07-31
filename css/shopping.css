@@ -18,17 +18,25 @@ iframe {
     text-decoration: none;
     font-size: 18px;
     /* color: #fe5431; */
+    color: #a3a3a3;
+
 }
 
 
 
-.active {
-    border-bottom: 4px solid #fe5431;
-}
 
 .box1>h1 {
     font-size: 40px;
     color: #333;
+    margin-top: -35px;
+    margin-bottom: 20px;
+}
+
+
+.active {
+    color: #fe5431 !important;
+    border-bottom: 4px solid #fe5431;
+
 }
 
 .box2 {

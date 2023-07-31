@@ -26,7 +26,6 @@ main>.box>.box02>.box01 {
 }
 
 main>.box>.box02>.box01>a {
-    /* float: left; */
     display: inline-block;
     padding: 7px 20px;
     background-color: rgba(252, 250, 250, .5);
@@ -91,7 +90,7 @@ main>.box>.box02>p>a {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .swiper-slide>ul>li {
@@ -103,6 +102,14 @@ main>.box>.box02>p>a {
     overflow: hidden;
     position: relative;
 
+
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    /* scale: 1.5; */
+    color: #999;
+    scale: 1.7;
 
 }
 
@@ -362,6 +369,10 @@ main>.box>.box02>p>a {
 
 }
 
+.box401>ul>li:hover img {
+    animation: swiper 1s infinite;
+}
+
 .box401>ul>li>a {
     float: left;
     width: 100%;
@@ -512,11 +523,20 @@ main>.box>.box02>p>a {
 }
 
 .box502>p:nth-of-type(2)>span:nth-of-type(2) {
-    background: url(../img/zan.png) no-repeat 6px 2px;
+    background: url(../img/zan.png) no-repeat 6px 17px;
 }
 
 .box502>p:nth-of-type(2)>span:nth-of-type(1) {
-    background: url(../img/reply.png) no-repeat 6px 2px;
+    background: url(../img/reply.png) no-repeat 6px 17px;
+}
+
+.box501>ul>li:hover {
+    cursor: pointer;
+
+}
+
+.box501>ul>li:hover img {
+    animation: swiper 1s infinite;
 }
 
 .box502 {
@@ -526,7 +546,9 @@ main>.box>.box02>p>a {
     background: url(../img/more.png) no-repeat 695px 32px;
 }
 
-.box502>p {
+.box502>a {
+    color: #fe5341;
+    text-decoration: none;
     line-height: 50px;
 }
 
