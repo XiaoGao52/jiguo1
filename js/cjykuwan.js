@@ -2,7 +2,7 @@
 // 排他法
 
 var yao1 = document.getElementsByTagName('a');
-console.log(yao1);
+// console.log(yao1);
 var box2 = document.getElementsByClassName('zuixin');
 // console.log(box2);
 

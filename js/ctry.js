@@ -1,16 +1,4 @@
-// 
 
-
-// 接口
-// axios.get('')
-
-// 排他法
-// 1
-// var trial = document.getElementsByClassName('trial');
-// var trial = document.querySelector('.trial');
-
-
-// var shoufa = document.querySelector('.')
 
 // 外部排他法1
 var a1 = document.getElementsByTagName('a');
@@ -67,9 +55,9 @@ for (var i = 0; i < arry.length; i++) {
 // var a3 = document.getElementsByTagName('a');
 var port1 = document.getElementsByClassName('port');
 var port2 = [port1[4], port1[5], port1[6], port1[7]]
-console.log(port2);
+// console.log(port2);
 var b1 = [a2[6], a2[7], a2[8], a2[9]]
-console.log(b1);
+// console.log(b1);
 
 
 
@@ -86,9 +74,6 @@ jia.onclick = function () {
 }
 
 
-// 申请接口
 
-// var prot1 = document.getElementsByClassName('port')[1];
-// console.log(prot1);
 
 
