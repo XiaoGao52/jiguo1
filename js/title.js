@@ -43,3 +43,4 @@ document.querySelector('.titimg').onmouseout = function () {
     console.log(1);
 
 }
+let a='1'
